@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For My Love 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Comic Sans MS, cursive;
+      text-align: center;
+      background: #ffe6f0;
+    }
+
+    .screen {
+      display: none;
+      padding: 40px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      color: #ff4d88;
+    }
+
+    button {
+      background: #ff99cc;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    button:hover {
+      background: #ff66a3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Screen 1 -->
+<div class="screen active" id="screen1">
+  <h1>Hey Love 💖</h1>
+  <p>I made something special for you...</p>
+  <button onclick="nextScreen(2)">Open 💌</button>
+</div>
+
+<!-- Screen 2 -->
+<div class="screen" id="screen2">
+  <h1>Will you be my Valentine? 💘</h1>
+  <button onclick="nextScreen(3)">Of course! 💖</button>
+  <button onclick="showNo()">No 😜</button>
+</div>
+
+<!-- Screen 3 -->
+<div class="screen" id="screen3">
+  <h1>Happy Valentine’s Day my kunjaannn 😘</h1>
+  <button onclick="nextScreen(4)">Next 🥰</button>
+</div>
+
+<!-- Screen 4 -->
+<div class="screen" id="screen4">
+  <h1>Cheers to our Lovee 😘</h1>
+  <p>Wait! There is more 💌</p>
+  <button onclick="nextScreen(5)">surprise🥰</button>
+</div>
+
+<!-- Screen 5 -->
+<div class="screen" id="screen5">
+ <h1>Written with all my Love 💌</h1>
+ <p>
+Happieeee Valentine’s Day da kunju mani 😘❤️<br><br>
+
+Nee en life la vandhadhum enaku daily free ah happiness subscription start aayiduchu 😂💕<br><br>
+
+Nee enoda:<br>
+Favorite notification 📱<br>
+Favorite call 📞<br>
+Favorite human being 😌<br>
+Lifetime headache but permanent happiness 🤭💕<br><br>
+
+Escape option illa 😌 Lock panniten 🔐❤️<br><br>
+
+Love you alwaysssss da ajeee 🥰💖<br><br>
+
+நான் பலவீனமாக இருக்கும் நேரங்களில் கூட,  
+என்னை வலிமையாக்கும் சக்தி நீ தான் 🥹  
+என் நாளின் தொடக்கம் உன் நினைவில்,  
+என் இரவின் முடிவு உன் அன்பில் 💕
+  </p>
+
+  <button onclick="nextScreen(6)">Final Message 💞</button>
+</div>
+
+<!-- Screen 6 -->
+<div class="screen" id="screen6">
+  <h1>One Thing 💖</h1>
+  <button onclick="nextScreen(7)">wishing by thairuu 🥰</button>
+</div>
+
+<!-- Screen 7 -->
+<div class="screen" id="screen7">
+
+  <p>
+I don’t need a special day to say how much I love you. recent ah thairuu ajee chapter over aairukum but alhamduillah save aaitu..
+but next apdi aachuna na una stop panamate becoz....
+ne happyy ah iruntha pothum..atha na paathale pothum ..i promise yewww!!
+You make my world brighter, my days happier, and my heart fuller.  
+I am so lucky to have you in my life 💕
+thairuu alwayss lovess yew!! stay happy,healthy and wealthy!!!
+  </p>
+</div>
+
+<script>
+  function nextScreen(num) {
+    let screens = document.querySelectorAll(".screen");
+    screens.forEach(s => s.classList.remove("active"));
+    document.getElementById("screen" + num).classList.add("active");
+  }
+
+  function showNo() {
+    alert("Wrong answer 😼 Try again!");
+  }
+</script>
+
+</body>
+</html>
